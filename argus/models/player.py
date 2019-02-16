@@ -1,4 +1,4 @@
-from argus.lib.util import JsonAbleObject
+from argus.lib.serialize import JsonAbleObject
 from argus.models.inventory import BaseInventory
 from argus.models.entity import Entity
 from uuid import uuid1

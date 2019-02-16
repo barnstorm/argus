@@ -1,4 +1,4 @@
-from argus.lib.util import JsonAbleObject
+from argus.lib.serialize import JsonAbleObject
 from uuid import uuid1
 
 
@@ -15,4 +15,5 @@ class Item(JsonAbleObject):
         self._uuid = str(uuid1())
         self.rank = 0
         self.type = None
+        self.sub_type = None
 

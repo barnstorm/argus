@@ -1,4 +1,4 @@
-from argus.lib.util import JsonAbleObject
+from argus.lib.serialize import JsonAbleObject
 from argus.models.item import Item
 
 class BaseInventory(JsonAbleObject):
@@ -63,7 +63,7 @@ class EntityInventory(BaseInventory):
         self.defense_slots = 1
         self.defense_eqip = JsonAbleObject()
 
-    def viable_equipment(self,action,type_array=None,rank=0):
+    def _viable_equipment(self,action,type_array=None,rank=0):
         options = []
         if type_array is None and action.lower() is "attack":
             type_array = ['attack','heal']
