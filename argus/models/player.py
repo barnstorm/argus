@@ -13,3 +13,6 @@ class Player(Entity):
         self._uuid = str(uuid1())
         self.nick = name
         self.inventory = BaseInventory(20)
+
+    def table(cls):
+        return "Player"

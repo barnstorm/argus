@@ -34,3 +34,4 @@ class Test:
                     return Test()._result("special_failure", chance, fate)
             else:
                 return Test()._result("failure", chance, fate)
+

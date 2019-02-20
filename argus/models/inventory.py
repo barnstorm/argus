@@ -6,6 +6,7 @@ class BaseInventory(JsonAbleObject):
     def __init__(self, slots: int):
         self.slots = slots
         self._items = []
+        self.uid = None
 
     def inv_items(self, action, item, cnt):
         action = action.lower()
